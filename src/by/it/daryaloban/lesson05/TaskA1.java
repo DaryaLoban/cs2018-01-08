@@ -23,7 +23,19 @@ package by.it.daryaloban.lesson05;
 
 */
 
+import java.util.Scanner;
 
 public class TaskA1 {
-
+    public static void main(String[] args) {
+        int[] arr = new int[10];
+        Scanner sc = new Scanner(System.in);
+        for (int i = 9; i >= 0; i--) {
+            arr[i] = sc.nextInt();
+        }
+        for (int anArr : arr) {
+            System.out.println(anArr);
+        }
+    }
 }
+
+

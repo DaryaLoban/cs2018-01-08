@@ -10,6 +10,24 @@ package by.it.daryaloban.lesson05;
 */
 
 
+import java.util.ArrayList;
+
 public class TaskB1 {
 
+        public static void main(String[] args) throws Exception {
+            ArrayList<String> list = new ArrayList<String>();
+
+            list.add("111");
+            list.add("222");
+            list.add("333");
+            list.add("444");
+            list.add("555");
+
+            System.out.println(list.size());
+
+            for(int i = 0; i < 5; i++){
+                System.out.println(list.get(i));
+            }
+
+        }
 }

@@ -35,19 +35,22 @@ import java.util.Scanner;
 */
 
 class TaskC3 {
-    public static double z = 9.81;
-    public static double m = 3.86;
+    public static final double GR_MARS = 3.86;
+    public static final double GR_EARTH = 9.81;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int weight = sc.nextInt();
+        double weight_mars = getWeight(weight);
+        System.out.println(weight_mars);
     }
 
-    public static double getWeight (int weight) {
-        double o = weight / z;
-        double t = o * m;
-        double newDouble = new BigDecimal(t).setScale(2, RoundingMode.UP).doubleValue();
-        return newDouble;
+    public static double getWeight(int weight) {
+        double w = weight * GR_MARS / GR_EARTH;
+        w = Math.round(w * 100);
+        w = w / 100;
+
+        return w;
     }
 }
 

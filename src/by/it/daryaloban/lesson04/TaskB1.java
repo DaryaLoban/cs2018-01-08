@@ -1,5 +1,8 @@
 package by.it.daryaloban.lesson04;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /*
 Определите количество дней в году
 
@@ -26,5 +29,17 @@ package by.it.daryaloban.lesson04;
 
 */
 public class TaskB1 {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String sYear = reader.readLine();
+        int Year = Integer.parseInt(sYear);
 
+        if ((Year % 4 == 0) && (Year % 100 != 0))
+            System.out.println("количество дней в году: 366");
+        else if ((Year % 4 == 0) && (Year % 400 == 0))
+            System.out.println("количество дней в году: 366");
+        else
+            System.out.println("количество дней в году: 365");
+
+    }
 }

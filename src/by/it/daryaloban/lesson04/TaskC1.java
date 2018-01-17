@@ -37,6 +37,49 @@ package by.it.daryaloban.lesson04;
 
 */
 
+import java.util.Scanner;
+
 public class TaskC1 {
+    public static void main(String[] args) {
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc = new Scanner(System.in);
+        int sal = sc.nextInt();
+        double prem = sal + sal*0.5;
+
+        if (sal >= 300 && sal <= 3000)
+            for (int month = 0; month <= 14; month++) {
+                if (month == 0 || month == 13 || month == 14)
+                    System.out.println("За месяц " + month + " начислено $" + 0.0);
+
+                else if (month == 1){
+                    System.out.println("За январь начислено $" + prem);
+                    if (prem==666) break;}
+                else if (month == 2)
+                    System.out.println("За февраль начислено $" + prem);
+                else if (month == 3)
+                    System.out.println("За март начислено $" + prem);
+                else if (month == 4)
+                    System.out.println("За апрель начислено $" + prem);
+                else if (month == 5)
+                    System.out.println("За май начислено $" + prem);
+                else if (month == 6){
+                    System.out.println("За июнь начислено $" + (sal*1.0));
+                    if ((sal*1.0) == 666) break;
+                }
+                else if (month == 7)
+                    System.out.println("За июль начислено $" + (sal*1.0));
+                else if (month == 8)
+                    System.out.println("За август начислено $" + (sal*1.0));
+                else if (month == 9)
+                    System.out.println("За сентябрь начислено $" + prem);
+                else if (month == 10)
+                    System.out.println("За октябрь начислено $" + prem);
+                else if (month == 11)
+                    System.out.println("За ноябрь начислено $" + prem);
+                else if (month == 12)
+                    System.out.println("За декабрь начислено $" + prem);
+            }
+        else System.out.println("Мы вам перезвоним!");
+    }
 
 }
