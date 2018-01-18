@@ -24,6 +24,23 @@ package by.it.kozhevko.lesson04;
 
  */
 
-public class TaskA2 {
+import java.util.Scanner;
 
+public class TaskA2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int day = sc.nextInt();
+        String[] days = {"такого дня недели не существует",
+                "понедельник",
+                "вторник",
+                "среда",
+                "четверг",
+                "пятница",
+                "суббота",
+                "воскресенье"};
+        if (day > 0 && day < 8)
+            System.out.println(days[day]);
+        else
+            System.out.println(days[0]);
+    }
 }

@@ -37,6 +37,52 @@ package by.it.kozhevko.lesson04;
 
 */
 
-public class TaskC1 {
+import java.util.Scanner;
 
+public class TaskC1 {
+    public static void main(String[] args) {
+        double a;
+        System.out.println("Какую вы хотите зарплату в $$$?");
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextDouble();
+        if (a <= 300 || a >= 3000) {
+            System.out.println("Мы вам перезвоним!");
+        } else {
+            for (int month=0; month <=14; month++) {
+                 double b;
+                b = (a * 1.5);
+               if(month==0||month==13||month ==14) {
+                   System.out.println("За месяц " + month + " начислено " + "$0.0");
+               }
+               else if (month==1){
+                        System.out.println("За январь начислено " + "$" + b);
+                        if (b == 666) break;}
+               else if (month==2){
+                        System.out.println("За февраль начислено " + "$" + b);}
+               else if (month==3){
+                        System.out.println("За март начислено " + "$" + b);}
+               else if (month==4){
+                        System.out.println("За апрель начислено " + "$" + b);}
+               else if (month==5){
+                        System.out.println("За май начислено " + "$" + b);}
+               else if (month==6){
+                        System.out.println("За июнь начислено " + "$" + a);
+                        if (a == 666) break;}
+               else if (month==7){
+                        System.out.println("За июль начислено " + "$" + a);}
+               else if (month==8){
+                        System.out.println("За август начислено " + "$" + a);}
+               else if (month==9){
+                        System.out.println("За сентябрь начислено " + "$" + b);}
+               else if (month==10){
+                        System.out.println("За октябрь начислено " + "$" + b);}
+               else if (month==11){
+                        System.out.println("За ноябрь начислено " + "$" + b);}
+               else if (month==12){
+                        System.out.println("За декабрь начислено " + "$" + b);}
+
+            }
+        }
+    }
 }
+
