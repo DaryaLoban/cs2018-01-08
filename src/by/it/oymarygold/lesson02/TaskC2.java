@@ -18,23 +18,13 @@ OCT:42+32=74
 class TaskC2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println ("Введите 2 числа:");
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-        String c = Integer.toBinaryString(a);
-        String d = Integer.toBinaryString(b);
-        String e = Integer.toHexString(a).toUpperCase();
-        String f = Integer.toHexString(b).toUpperCase();
-        String g = Integer.toOctalString(a);
-        String h = Integer.toOctalString(b);
-        int Sum1=a+b;
-        String Sum2=c+d;
-        String Sum3=e+f;
-        String Sum4=g+h;
-        System.out.println ("Сумма чисел в разных системах счисления");
-        System.out.println ("DEC: " + a + "+" + b + "=" + Sum1);
-        System.out.println ("BIN: " + c + "+" + d + "=" + Sum2);
-        System.out.println ("HEX: " + e + "+" + f + "=" + Sum3);
-        System.out.println ("OCT: " + g + "+" + h + "=" + Sum4);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("DEC:" + a + "+" + b + "=" + (a + b));
+        System.out.println("BIN:" + Integer.toBinaryString(a) + "+" + Integer.toBinaryString(b) + "=" + Integer.toBinaryString(a + b));
+        System.out.println("HEX:" + Integer.toHexString(a) + "+" + Integer.toHexString(b) + "=" + Integer.toHexString(a + b));
+        System.out.println("OCT:" + Integer.toOctalString(a) + "+" + Integer.toOctalString(b) + "=" + Integer.toOctalString(a + b));
+
     }
 }

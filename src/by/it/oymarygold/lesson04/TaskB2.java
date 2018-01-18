@@ -2,6 +2,7 @@ package by.it.oymarygold.lesson04;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /*
 Таблица умножения
@@ -26,22 +27,20 @@ size прочитать c клавиатуры. Числа разделить п
 2. Программа должна выводить текст на экран.
 3. Программа должна выводить таблицу умножения size х size.
  */
+
 public class TaskB2 {
-    public static void main(String[] args)
-            throws java.io.IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите число: ");
-        int number = Integer.parseInt(reader.readLine());
-        int i=1,n=1;
-        while(i<=10) {
-            System.out.print(i+" ");
-            while(n<=9) {
-                n++;
-                System.out.print(i*n+" ");
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int i = 1;
+        while (i <= size) {
+            int b=1;
+            while (b<=size) {
+                System.out.print(b*i+" ");
+                b++;
             }
+            System.out.println();
             i++;
-            n=1;
-            System.out.println("");
         }
     }
 }
