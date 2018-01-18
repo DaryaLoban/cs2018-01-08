@@ -26,5 +26,4 @@ package by.it.kozhevko.lesson04;
 
  */
 public class TaskC2 {
-
 }

@@ -25,6 +25,22 @@ package by.it.kozhevko.lesson04;
  */
 
 
-public class TaskB3 {
+import java.util.Scanner;
 
+public class TaskB3 {
+    public static void main(String[] args) {
+        int a;
+        int i;
+        int s;
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextInt();
+        i = 2;
+        s = 1;
+        do {
+            System.out.print(s + ",");
+            s = s + i;
+            i++;
+        }
+        while (s <= a);
+    }
 }
