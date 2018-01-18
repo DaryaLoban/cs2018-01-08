@@ -22,10 +22,7 @@ public class TaskB1 {
         list.add("пятая строка");
         int n = list.size();
         System.out.println(n);
-        for (int i = 0; i < n; i++) {
-            System.out.println(list.get(i));
-
-        }
+        for (int i = 0; i < n; i++) System.out.println(list.get(i));
 
     }
 }
