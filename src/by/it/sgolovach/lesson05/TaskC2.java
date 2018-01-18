@@ -12,18 +12,15 @@ public class TaskC2 {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int[] array = new int[20];
-        int[] array1 = new int[20];
         for (int i = 0; i < array.length; i++) {
             String a = reader.readLine();
             array[i] = Integer.parseInt(a);
         }
-        for (int i : array1 = sort(array)) {
-            System.out.println(i);
-        }
+        sort(array);
     }
 
     //Напишите тут ваш код
-    public static int[] sort(int[] array) {
+    public static void sort(int[] array) {
         int a, b, t;
         int size;
         size = 20;
@@ -35,7 +32,9 @@ public class TaskC2 {
                     array[b] = t;
                 }
             }
-        return array;
+        for (int i = 0; i <size ; i++) {
+            System.out.println(array[i]);
+        }
         //Напишите тут ваш код
     }
 
