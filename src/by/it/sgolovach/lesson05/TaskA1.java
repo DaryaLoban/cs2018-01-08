@@ -33,7 +33,7 @@ public class TaskA1 {
         for (int i = 9; i >= 0; i--) {
             arr[i] = sc.nextInt();
         }
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length ; i++) {
             System.out.println(arr[i]);
         }
     }
