@@ -25,39 +25,18 @@ import java.util.Scanner;
 
 public class TaskB2 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int[] m = new int [20];
-        int [] a = new int [10];
-        int [] b  = new int[10];
+        Scanner sc = new Scanner(System.in);
+        int[] m = new int[20];
+        int[] a = new int[10];
+        int[] b = new int[10];
         int i;
-        for (i=0; i<20; i++){
+        for (i = 0; i < 20; i++) {
             m[i] = Integer.parseInt(sc.next());
-            if (i<10)
-                a[i]=m[i];
+            if (i < 10)
+                a[i] = m[i];
             else
-                b[i-10]=m[i];
-             }
+                b[i - 10] = m[i];
+        }
         System.out.println("a=" + Arrays.toString(a));
         System.out.println("b=" + Arrays.toString(b));
-/*
-    for (int i=0; i<m.length; i++) {
-         m[i] = sc.nextInt();
-    }
-    for (int i =0; i<10; i++) {
-        a[i] = m[i];
-
-    }System.out.println("a=" + Arrays.toString(a));
-
-    for (int i =10;   i< m.length; i++) {
-            b[i] = m[i];
-
-    }System.out.println("b=" + Arrays.toString(b));*/
-
-
-
-
-
-
-
-    }
-}
+    }}
