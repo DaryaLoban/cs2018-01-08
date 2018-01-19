@@ -10,6 +10,21 @@ package by.it.kudelich.lesson05;
 */
 
 
-public class TaskB1 {
+import java.util.ArrayList;
+import java.util.Scanner;
 
+public class TaskB1 {
+    public static void main(String[] args) {
+        ArrayList<String> obj = new ArrayList<String>();
+        obj.add("One");
+        obj.add("Two");
+        obj.add("Three");
+        obj.add("Four");
+        obj.add("Five");
+        System.out.println(obj.size());
+        for (int i = 0; i < obj.size(); i++) {
+            System.out.println(obj.get(i));
+        }
+
+    }
 }
