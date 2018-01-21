@@ -40,6 +40,4 @@ public class TaskA1 {
         System.out.println(d1.getName() + " " + d1.getAge());
         System.out.println(d2.getName() + " " + d2.getAge());
     }
-
-
 }

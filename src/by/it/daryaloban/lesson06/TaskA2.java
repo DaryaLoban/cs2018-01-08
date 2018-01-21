@@ -36,5 +36,4 @@ public class TaskA2 {
         System.out.println(d1);
         System.out.println(d2);
     }
-
 }
