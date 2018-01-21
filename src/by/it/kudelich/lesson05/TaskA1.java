@@ -24,6 +24,28 @@ package by.it.kudelich.lesson05;
 */
 
 
+import java.util.Scanner;
+
 public class TaskA1 {
 
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int[] anArray;
+        anArray = new int[10];
+        for (int i = 0; i < anArray.length; i++) {
+            int arrVal = sc.nextInt();
+            anArray[i] = arrVal;
+        }
+        for(int i = 0; i < anArray.length / 2; i++)
+        {
+            int temp = anArray[i];
+            anArray[i] = anArray[anArray.length - i - 1];
+            anArray[anArray.length - i - 1] = temp;
+        }
+
+        for (int i = 0; i < anArray.length; i++) {
+            System.out.println(anArray[i]);
+        }
+    }
 }
