@@ -24,11 +24,7 @@ package by.it.morozevich.lesson04;
 
  */
 
-import static java.lang.System.in;
-
-import java.util.Scanner;
 
 public class TaskB3 {
 
-    }
 }
