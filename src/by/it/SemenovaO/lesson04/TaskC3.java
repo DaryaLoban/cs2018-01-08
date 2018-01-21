@@ -31,7 +31,7 @@ public class TaskC3 {
                 mul = i * j;
                 if (i != 1 && j != 1) System.out.println(convertToStringI(i) + " умножить на " + convertToStringJ(j) +
                         " равно " + convertToStringMul(mul));
-                else continue;
+
 
             }
         }
