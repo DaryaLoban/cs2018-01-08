@@ -54,9 +54,9 @@ public class Dog {
         return z;
     }
 
-    boolean win(Dog dog) {
+    boolean win(Dog otherDog) {
         double chanceThis = 0.2 * this.age + 0.3 * this.weight + 0.5 * this.power;
-        double chanceOther = 0.2 * dog.age + 0.3 * dog.weight + 0.5 * dog.power;
+        double chanceOther = 0.2 * otherDog.age + 0.3 * otherDog.weight + 0.5 * otherDog.power;
         if (chanceThis > chanceOther) return true;
         else return false;
     }
